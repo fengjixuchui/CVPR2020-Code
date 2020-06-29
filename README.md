@@ -6,6 +6,7 @@ CVPR 2020 论文开源项目合集，同时欢迎各位大佬提交issue，分�
 
 - [CNN](#CNN)
 - [图像分类](#Image-Classification)
+- [视频分类](#Video-Classification)
 - [目标检测](#Object-Detection)
 - [3D目标检测](#3D-Object-Detection)
 - [视频目标检测](#Video-Object-Detection)
@@ -15,6 +16,7 @@ CVPR 2020 论文开源项目合集，同时欢迎各位大佬提交issue，分�
 - [全景分割](#Panoptic-Segmentation)
 - [视频目标分割](#VOS)
 - [超像素分割](#Superpixel)
+- [交互式图像分割](#IIS)
 - [NAS](#NAS)
 - [GAN](#GAN)
 - [Re-ID](#Re-ID)
@@ -24,6 +26,7 @@ CVPR 2020 论文开源项目合集，同时欢迎各位大佬提交issue，分�
 - [人体解析](#Human-Parsing)
 - [场景文本检测](#Scene-Text-Detection)
 - [场景文本识别](#Scene-Text-Recognition)
+- [特征(点)检测和描述](#Feature)
 - [超分辨率](#Super-Resolution)
 - [模型压缩/剪枝](#Model-Compression)
 - [视频理解/行为识别](#Action-Recognition)
@@ -40,17 +43,22 @@ CVPR 2020 论文开源项目合集，同时欢迎各位大佬提交issue，分�
 - [视频问答(VideoQA)](#VideoQA)
 - [视觉语言导航](#VLN)
 - [视频压缩](#Video-Compression)
-- [视频插值](#Video-Frame-Interpolation)
+- [视频插帧](#Video-Frame-Interpolation)
 - [风格迁移](#Style-Transfer)
 - [车道线检测](#Lane-Detection)
 - ["人-物"交互(HOI)检测](#HOI)
-- [行为轨迹预测](#HTP)
+- [轨迹预测](#TP)
 - [运动预测](#Motion-Predication)
+- [光流估计](#OF)
+- [图像检索](#IR)
 - [虚拟试衣](#Virtual-Try-On)
 - [HDR](#HDR)
 - [对抗样本](#AE)
+- [三维重建](#3D-Reconstructing)
 - [深度补全](#DC)
 - [语义场景补全](#SSC)
+- [图像/视频描述](#Captioning)
+- [线框解析](#WP)
 - [数据集](#Datasets)
 - [其他](#Others)
 - [不确定中没中](#Not-Sure)
@@ -90,12 +98,40 @@ CVPR 2020 论文开源项目合集，同时欢迎各位大佬提交issue，分�
 **Spatially Attentive Output Layer for Image Classification**
 
 - 论文：https://arxiv.org/abs/2004.07570 
-
 - 代码（好像被原作者删除了）：https://github.com/ildoonet/spatially-attentive-output-layer 
+
+<a name="Video-Classification"></a>
+
+# 视频分类
+
+**SmallBigNet: Integrating Core and Contextual Views for Video Classification**
+
+- 论文：https://arxiv.org/abs/2006.14582
+- 代码：https://github.com/xhl-video/SmallBigNet
 
 <a name="Object-Detection"></a>
 
 # 目标检测
+
+**Overcoming Classifier Imbalance for Long-tail Object Detection with Balanced Group Softmax**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Li_Overcoming_Classifier_Imbalance_for_Long-Tail_Object_Detection_With_Balanced_Group_CVPR_2020_paper.pdf
+- 代码：https://github.com/FishYuLi/BalancedGroupSoftmax
+
+**AugFPN: Improving Multi-scale Feature Learning for Object Detection**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_AugFPN_Improving_Multi-Scale_Feature_Learning_for_Object_Detection_CVPR_2020_paper.pdf 
+- 代码：https://github.com/Gus-Guo/AugFPN
+
+**Noise-Aware Fully Webly Supervised Object Detection**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/html/Shen_Noise-Aware_Fully_Webly_Supervised_Object_Detection_CVPR_2020_paper.html
+- 代码：https://github.com/shenyunhang/NA-fWebSOD/
+
+**Learning a Unified Sample Weighting Network for Object Detection**
+
+- 论文：https://arxiv.org/abs/2006.06568
+- 代码：https://github.com/caiqi/sample-weighting-network
 
 **D2Det: Towards High Quality Object Detection and Instance Segmentation**
 
@@ -169,6 +205,42 @@ CVPR 2020 论文开源项目合集，同时欢迎各位大佬提交issue，分�
 <a name="3D-Object-Detection"></a>
 
 # 3D目标检测
+
+**SESS: Self-Ensembling Semi-Supervised 3D Object Detection**
+
+- 论文： https://arxiv.org/abs/1912.11803
+
+- 代码：https://github.com/Na-Z/sess
+
+**Associate-3Ddet: Perceptual-to-Conceptual Association for 3D Point Cloud Object Detection**
+
+- 论文： https://arxiv.org/abs/2006.04356
+
+- 代码：https://github.com/dleam/Associate-3Ddet
+
+**What You See is What You Get: Exploiting Visibility for 3D Object Detection**
+
+- 主页：https://www.cs.cmu.edu/~peiyunh/wysiwyg/
+
+- 论文：https://arxiv.org/abs/1912.04986
+- 代码：https://github.com/peiyunh/wysiwyg
+
+**Learning Depth-Guided Convolutions for Monocular 3D Object Detection**
+
+- 论文：https://arxiv.org/abs/1912.04799
+- 代码：https://github.com/dingmyu/D4LCN
+
+**Structure Aware Single-stage 3D Object Detection from Point Cloud**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/html/He_Structure_Aware_Single-Stage_3D_Object_Detection_From_Point_Cloud_CVPR_2020_paper.html
+
+- 代码：https://github.com/skyhehe123/SA-SSD
+
+**IDA-3D: Instance-Depth-Aware 3D Object Detection from Stereo Vision for Autonomous Driving**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Peng_IDA-3D_Instance-Depth-Aware_3D_Object_Detection_From_Stereo_Vision_for_Autonomous_CVPR_2020_paper.pdf
+
+- 代码：https://github.com/swords123/IDA-3D
 
 **Train in Germany, Test in The USA: Making 3D Object Detectors Generalize**
 
@@ -289,8 +361,16 @@ CVPR 2020 论文开源项目合集，同时欢迎各位大佬提交issue，分�
 **Siamese Box Adaptive Network for Visual Tracking**
 
 - 论文：https://arxiv.org/abs/2003.06761
-
 - 代码：https://github.com/hqucv/siamban
+
+## 多目标跟踪
+
+**3D-ZeF: A 3D Zebrafish Tracking Benchmark Dataset**
+
+- 主页：https://vap.aau.dk/3d-zef/
+- 论文：https://arxiv.org/abs/2006.08466
+- 代码：https://bitbucket.org/aauvap/3d-zef/src/master/
+- 数据集：https://motchallenge.net/data/3D-ZeF20
 
 <a name="Semantic-Segmentation"></a>
 
@@ -404,6 +484,12 @@ CVPR 2020 论文开源项目合集，同时欢迎各位大佬提交issue，分�
 
 # 全景分割
 
+**Video Panoptic Segmentation**
+
+- 论文：https://arxiv.org/abs/2006.11339
+- 代码：https://github.com/mcahny/vps
+- 数据集：https://www.dropbox.com/s/ecem4kq0fdkver4/cityscapes-vps-dataset-1.0.zip?dl=0
+
 **Pixel Consensus Voting for Panoptic Segmentation**
 
 - 论文：https://arxiv.org/abs/2004.01849
@@ -449,6 +535,16 @@ CVPR 2020 论文开源项目合集，同时欢迎各位大佬提交issue，分�
 
 - 论文：https://arxiv.org/abs/2003.12929
 - 代码：https://github.com/fuy34/superpixel_fcn
+
+<a name="IIS"></a>
+
+# 交互式图像分割
+
+**Interactive Object Segmentation with Inside-Outside Guidance**
+
+- 论文下载链接：http://openaccess.thecvf.com/content_CVPR_2020/papers/Zhang_Interactive_Object_Segmentation_With_Inside-Outside_Guidance_CVPR_2020_paper.pdf
+- 代码：https://github.com/shiyinzhang/Inside-Outside-Guidance
+- 数据集：https://github.com/shiyinzhang/Pixel-ImageNet
 
 <a name="NAS"></a>
 
@@ -542,6 +638,11 @@ CVPR 2020 论文开源项目合集，同时欢迎各位大佬提交issue，分�
 <a name="Re-ID"></a>
 
 # Re-ID
+
+ **High-Order Information Matters: Learning Relation and Topology for Occluded Person Re-Identification**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/html/Wang_High-Order_Information_Matters_Learning_Relation_and_Topology_for_Occluded_Person_CVPR_2020_paper.html
+- 代码：https://github.com/wangguanan/HOReID 
 
 **COCAS: A Large-Scale Clothes Changing Person Dataset for Re-identification**
 
@@ -658,6 +759,13 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 - 论文：https://arxiv.org/abs/2005.13888
 - 代码：https://github.com/HaozheQi/P2B
+
+## 其他
+
+**An Efficient PointLSTM for Point Clouds Based Gesture Recognition**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/html/Min_An_Efficient_PointLSTM_for_Point_Clouds_Based_Gesture_Recognition_CVPR_2020_paper.html
+- 代码：https://github.com/Blueprintf/pointlstm-gesture-recognition-pytorch
 
 <a name="Face"></a>
 
@@ -794,6 +902,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # 场景文本检测
 
+**ContourNet: Taking a Further Step Toward Accurate Arbitrary-Shaped Scene Text Detection**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_ContourNet_Taking_a_Further_Step_Toward_Accurate_Arbitrary-Shaped_Scene_Text_CVPR_2020_paper.pdf
+- 代码：https://github.com/wangyuxin87/ContourNet 
+
 **UnrealText: Synthesizing Realistic Scene Text Images from the Unreal World**
 
 - 论文：https://arxiv.org/abs/2003.10608
@@ -836,11 +949,25 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 - 代码：https://github.com/Canjie-Luo/Text-Image-Augmentation
 
+<a name="Feature"></a>
+
+# 特征(点)检测和描述
+
+**SuperGlue: Learning Feature Matching with Graph Neural Networks**
+
+- 论文：https://arxiv.org/abs/1911.11763
+- 代码：https://github.com/magicleap/SuperGluePretrainedNetwork
+
 <a name="Super-Resolution"></a>
 
 # 超分辨率
 
 ## 图像超分辨率
+
+**Closed-Loop Matters: Dual Regression Networks for Single Image Super-Resolution**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/html/Guo_Closed-Loop_Matters_Dual_Regression_Networks_for_Single_Image_Super-Resolution_CVPR_2020_paper.html
+- 代码：https://github.com/guoyongcs/DRN
 
 **Learning Texture Transformer Network for Image Super-Resolution**
 
@@ -866,11 +993,6 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 代码：https://github.com/clovaai/cutblur
 
 ## 视频超分辨率
-
-**Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video Super-Resolution**
-
-- 论文：https://arxiv.org/abs/2002.11616
-- 代码：https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020
 
 **TDAN: Temporally-Deformable Alignment Network for Video Super-Resolution**
 
@@ -929,6 +1051,19 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # 视频理解/行为识别
 
+**Oops! Predicting Unintentional Action in Video**
+
+- 主页：https://oops.cs.columbia.edu/
+
+- 论文：https://arxiv.org/abs/1911.11206
+- 代码：https://github.com/cvlab-columbia/oops
+- 数据集：https://oops.cs.columbia.edu/data
+
+**PREDICT & CLUSTER: Unsupervised Skeleton Based Action Recognition**
+
+- 论文：https://arxiv.org/abs/1911.12409
+- 代码：https://github.com/shlizee/Predict-Cluster 
+
 **Intra- and Inter-Action Understanding via Temporal Action Parsing**
 
 - 论文：https://arxiv.org/abs/2005.10229
@@ -977,6 +1112,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Depth-Estimation"></a>
 
 # 深度估计
+
+**BiFuse: Monocular 360◦ Depth Estimation via Bi-Projection Fusion**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_BiFuse_Monocular_360_Depth_Estimation_via_Bi-Projection_Fusion_CVPR_2020_paper.pdf
+- 代码：https://github.com/Yeh-yu-hsuan/BiFuse
 
 **Focus on defocus: bridging the synthetic to real domain gap for depth estimation**
 
@@ -1168,7 +1308,18 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 <a name="Video-Frame-Interpolation"></a>
 
-# 视频插值
+# 视频插帧
+
+**AdaCoF: Adaptive Collaboration of Flows for Video Frame Interpolation**
+
+- 论文：https://arxiv.org/abs/1907.10244
+- 代码：https://github.com/HyeongminLEE/AdaCoF-pytorch
+
+**FeatureFlow: Robust Video Interpolation via Structure-to-Texture Generation**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/html/Gui_FeatureFlow_Robust_Video_Interpolation_via_Structure-to-Texture_Generation_CVPR_2020_paper.html
+
+- 代码：https://github.com/CM-BF/FeatureFlow
 
 **Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video Super-Resolution**
 
@@ -1242,9 +1393,15 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 - 论文：https://arxiv.org/abs/2003.05541
 - 代码：https://github.com/ASMIftekhar/VSGNet
 
-<a name="HTP"></a>
+<a name="TP"></a>
 
-# 行人轨迹预测
+# 轨迹预测
+
+**The Garden of Forking Paths: Towards Multi-Future Trajectory Prediction**
+
+- 论文：https://arxiv.org/abs/1912.06445
+- 代码：https://github.com/JunweiLiang/Multiverse
+- 数据集：https://next.cs.cmu.edu/multiverse/
 
 **Social-STGCNN: A Social Spatio-Temporal Graph Convolutional Neural Network for Human Trajectory Prediction**
 
@@ -1265,6 +1422,24 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 - 论文：https://arxiv.org/abs/2003.06754
 
 - 代码：https://github.com/pxiangwu/MotionNet
+
+<a name="OF"></a>
+
+# 光流估计
+
+**Learning by Analogy: Reliable Supervision from Transformations for Unsupervised Optical Flow Estimation**
+
+- 论文：https://arxiv.org/abs/2003.13045
+- 代码：https://github.com/lliuz/ARFlow 
+
+<a name="IR"></a>
+
+# 图像检索
+
+**Evade Deep Image Retrieval by Stashing Private Images in the Hash Space**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/html/Xiao_Evade_Deep_Image_Retrieval_by_Stashing_Private_Images_in_the_CVPR_2020_paper.html
+- 代码：https://github.com/sugarruy/hashstash
 
 <a name="Virtual-Try-On"></a>
 
@@ -1296,6 +1471,35 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 - 论文：https://arxiv.org/abs/1911.02466
 - 代码：https://github.com/ZhengyuZhao/PerC-Adversarial 
 
+<a name="3D-Reconstructing"></a>
+
+# 三维重建
+
+**Unsupervised Learning of Probably Symmetric Deformable 3D Objects from Images in the Wild**
+
+- **CVPR 2020 Best Paper**
+- 主页：https://elliottwu.com/projects/unsup3d/
+- 论文：https://arxiv.org/abs/1911.11130
+- 代码：https://github.com/elliottwu/unsup3d
+
+**Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human Digitization**
+
+- 主页：https://shunsukesaito.github.io/PIFuHD/
+- 论文：https://arxiv.org/abs/2004.00452
+- 代码：https://github.com/facebookresearch/pifuhd
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Patel_TailorNet_Predicting_Clothing_in_3D_as_a_Function_of_Human_CVPR_2020_paper.pdf
+- 代码：https://github.com/chaitanya100100/TailorNet
+- 数据集：https://github.com/zycliao/TailorNet_dataset
+
+**Implicit Functions in Feature Space for 3D Shape Reconstruction and Completion**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Chibane_Implicit_Functions_in_Feature_Space_for_3D_Shape_Reconstruction_and_CVPR_2020_paper.pdf
+- 代码：https://github.com/jchibane/if-net
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Mir_Learning_to_Transfer_Texture_From_Clothing_Images_to_3D_Humans_CVPR_2020_paper.pdf
+- 代码：https://github.com/aymenmir1/pix2surf
+
 <a name="DC"></a>
 
 # 深度补全
@@ -1315,9 +1519,75 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 - 论文：https://arxiv.org/abs/2003.14052
 - 代码：https://github.com/charlesCXK/3D-SketchAware-SSC 
 
+<a name="Captioning"></a>
+
+# 图像/视频描述
+
+**Syntax-Aware Action Targeting for Video Captioning**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Zheng_Syntax-Aware_Action_Targeting_for_Video_Captioning_CVPR_2020_paper.pdf
+- 代码：https://github.com/SydCaption/SAAT 
+
+<a name="WP"></a>
+
+# 线框解析
+
+**Holistically-Attracted Wireframe Parser**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/html/Xue_Holistically-Attracted_Wireframe_Parsing_CVPR_2020_paper.html
+
+- 代码：https://github.com/cherubicXN/hawp
+
 <a name="Datasets"></a>
 
 # 数据集
+
+**Interactive Object Segmentation with Inside-Outside Guidance**
+
+- 论文下载链接：http://openaccess.thecvf.com/content_CVPR_2020/papers/Zhang_Interactive_Object_Segmentation_With_Inside-Outside_Guidance_CVPR_2020_paper.pdf
+- 代码：https://github.com/shiyinzhang/Inside-Outside-Guidance
+- 数据集：https://github.com/shiyinzhang/Pixel-ImageNet
+
+**Video Panoptic Segmentation**
+
+- 论文：https://arxiv.org/abs/2006.11339
+- 代码：https://github.com/mcahny/vps
+- 数据集：https://www.dropbox.com/s/ecem4kq0fdkver4/cityscapes-vps-dataset-1.0.zip?dl=0
+
+**FSS-1000: A 1000-Class Dataset for Few-Shot Segmentation**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/html/Li_FSS-1000_A_1000-Class_Dataset_for_Few-Shot_Segmentation_CVPR_2020_paper.html
+
+- 代码：https://github.com/HKUSTCV/FSS-1000
+
+- 数据集：https://github.com/HKUSTCV/FSS-1000
+
+**3D-ZeF: A 3D Zebrafish Tracking Benchmark Dataset**
+
+- 主页：https://vap.aau.dk/3d-zef/
+- 论文：https://arxiv.org/abs/2006.08466
+- 代码：https://bitbucket.org/aauvap/3d-zef/src/master/
+- 数据集：https://motchallenge.net/data/3D-ZeF20
+
+**TailorNet: Predicting Clothing in 3D as a Function of Human Pose, Shape and Garment Style**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Patel_TailorNet_Predicting_Clothing_in_3D_as_a_Function_of_Human_CVPR_2020_paper.pdf
+- 代码：https://github.com/chaitanya100100/TailorNet
+- 数据集：https://github.com/zycliao/TailorNet_dataset
+
+**Oops! Predicting Unintentional Action in Video**
+
+- 主页：https://oops.cs.columbia.edu/
+
+- 论文：https://arxiv.org/abs/1911.11206
+- 代码：https://github.com/cvlab-columbia/oops
+- 数据集：https://oops.cs.columbia.edu/data
+
+**The Garden of Forking Paths: Towards Multi-Future Trajectory Prediction**
+
+- 论文：https://arxiv.org/abs/1912.06445
+- 代码：https://github.com/JunweiLiang/Multiverse
+- 数据集：https://next.cs.cmu.edu/multiverse/
 
 **Open Compound Domain Adaptation**
 
@@ -1353,6 +1623,7 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 - 论文：http://vladlen.info/papers/MSeg.pdf
 - 代码：https://github.com/mseg-dataset/mseg-api
+- 数据集：https://github.com/mseg-dataset/mseg-semantic
 
 **AvatarMe: Realistically Renderable 3D Facial Reconstruction "in-the-wild"**
 
@@ -1424,6 +1695,16 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Others"></a>
 
 # 其他
+
+**CONSAC: Robust Multi-Model Fitting by Conditional Sample Consensus**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/html/Kluger_CONSAC_Robust_Multi-Model_Fitting_by_Conditional_Sample_Consensus_CVPR_2020_paper.html
+- 代码：https://github.com/fkluger/consac
+
+**Learning to Learn Single Domain Generalization**
+
+- 论文：https://arxiv.org/abs/2003.13216
+- 代码：https://github.com/joffery/M-ADA
 
 **Open Compound Domain Adaptation**
 
