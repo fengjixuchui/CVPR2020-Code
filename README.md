@@ -602,6 +602,11 @@ ECCV 2020 论文开源项目合集来了：https://github.com/amusi/ECCV2020-Cod
 
 # GAN
 
+**SEAN: Image Synthesis with Semantic Region-Adaptive Normalization**
+
+- 论文：https://arxiv.org/abs/1911.12861
+- 代码：https://github.com/ZPdesu/SEAN
+
 **Reusing Discriminators for Encoding: Towards Unsupervised Image-to-Image Translation**
 
 - 论文地址：http://openaccess.thecvf.com/content_CVPR_2020/html/Chen_Reusing_Discriminators_for_Encoding_Towards_Unsupervised_Image-to-Image_Translation_CVPR_2020_paper.html
@@ -846,6 +851,13 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 ## 2D人体姿态估计
 
+**TransMoMo: Invariance-Driven Unsupervised Video Motion Retargeting**
+
+- 主页：https://yzhq97.github.io/transmomo/
+
+- 论文：https://arxiv.org/abs/2003.14401
+- 代码：https://github.com/yzhq97/transmomo.pytorch
+
 **HigherHRNet: Scale-Aware Representation Learning for Bottom-Up Human Pose Estimation**
 
 - 论文：https://arxiv.org/abs/1908.10357
@@ -866,6 +878,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 - 代码：https://github.com/ilovepose/DarkPose 
 
 ## 3D人体姿态估计
+
+ **Cascaded Deep Monocular 3D Human Pose Estimation With Evolutionary Training Data**
+
+- 论文：https://arxiv.org/abs/2006.07778
+- 代码：https://github.com/Nicholasli1995/EvoSkeleton 
 
 **Fusing Wearable IMUs with Multi-View Images for Human Pose Estimation: A Geometric Approach**
 
@@ -919,6 +936,14 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Scene-Text-Detection"></a>
 
 # 场景文本检测
+
+**STEFANN: Scene Text Editor using Font Adaptive Neural Network**
+
+- 主页：https://prasunroy.github.io/stefann/
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/html/Roy_STEFANN_Scene_Text_Editor_Using_Font_Adaptive_Neural_Network_CVPR_2020_paper.html
+- 代码：https://github.com/prasunroy/stefann
+- 数据集：https://drive.google.com/open?id=1sEDiX_jORh2X-HSzUnjIyZr-G9LJIw1k
 
 **ContourNet: Taking a Further Step Toward Accurate Arbitrary-Shaped Scene Text Detection**
 
@@ -1179,6 +1204,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="6DOF"></a>
 
 # 6D目标姿态估计
+
+ **PVN3D: A Deep Point-wise 3D Keypoints Voting Network for 6DoF Pose Estimation**
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/papers/He_PVN3D_A_Deep_Point-Wise_3D_Keypoints_Voting_Network_for_6DoF_CVPR_2020_paper.pdf
+- 代码：https://github.com/ethnhe/PVN3D
 
 **MoreFusion: Multi-object Reasoning for 6D Pose Estimation from Volumetric Fusion**
 
@@ -1570,6 +1600,14 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Datasets"></a>
 
 # 数据集
+
+**STEFANN: Scene Text Editor using Font Adaptive Neural Network**
+
+- 主页：https://prasunroy.github.io/stefann/
+
+- 论文：http://openaccess.thecvf.com/content_CVPR_2020/html/Roy_STEFANN_Scene_Text_Editor_Using_Font_Adaptive_Neural_Network_CVPR_2020_paper.html
+- 代码：https://github.com/prasunroy/stefann
+- 数据集：https://drive.google.com/open?id=1sEDiX_jORh2X-HSzUnjIyZr-G9LJIw1k
 
 **Interactive Object Segmentation with Inside-Outside Guidance**
 
