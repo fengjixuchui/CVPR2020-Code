@@ -38,6 +38,7 @@ ECCV 2020 论文开源项目合集来了：https://github.com/amusi/ECCV2020-Cod
 - [手势估计](#Hand-Pose)
 - [显著性检测](#Saliency)
 - [去噪](#Denoising)
+- [去雨](#Deraining)
 - [去模糊](#Deblurring)
 - [去雾](#Dehazing)
 - [特征点检测与描述](#Feature)
@@ -383,6 +384,12 @@ ECCV 2020 论文开源项目合集来了：https://github.com/amusi/ECCV2020-Cod
 <a name="Semantic-Segmentation"></a>
 
 # 语义分割
+
+**FDA: Fourier Domain Adaptation for Semantic Segmentation**
+
+- 论文：https://arxiv.org/abs/2004.05498
+
+- 代码：https://github.com/YanchaoYang/FDA
 
 **Super-BPD: Super Boundary-to-Pixel Direction for Fast Image Segmentation**
 
@@ -1283,8 +1290,12 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 **Multi-Scale Progressive Fusion Network for Single Image Deraining**
 
 - 论文：https://arxiv.org/abs/2003.10985
-
 - 代码：https://github.com/kuihua/MSPFN
+
+**Detail-recovery Image Deraining via Context Aggregation Networks**
+
+- 论文：https://openaccess.thecvf.com/content_CVPR_2020/html/Deng_Detail-recovery_Image_Deraining_via_Context_Aggregation_Networks_CVPR_2020_paper.html
+- 代码：https://github.com/Dengsgithub/DRD-Net
 
 <a name="Deblurring"></a>
 
@@ -1600,6 +1611,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Datasets"></a>
 
 # 数据集
+
+**OASIS: A Large-Scale Dataset for Single Image 3D in the Wild**
+
+- 论文：https://arxiv.org/abs/2007.13215
+- 数据集：https://oasis.cs.princeton.edu/
 
 **STEFANN: Scene Text Editor using Font Adaptive Neural Network**
 
